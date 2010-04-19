@@ -1,0 +1,6 @@
+---
+layout:default
+Title: My First post
+---
+
+This is my first blog post
