@@ -1,0 +1,30 @@
+---
+layout:default.html
+title: jQuery Datepicker in modal dialog
+---
+
+At work, I had this issue with the jQuery datepicker inside a dialog box opening automatically.
+
+Html:
+<div id="modalDialog">
+ <input name="beginDate" class="date" type="text" value="">
+ ....
+ ....
+ <input type="button" id="someBtn" name="someBtn" value="Open form">
+ </div>
+ 
+ JS:
+ 
+ $(document).ready(function(){
+ 	$('.date').datepicker();
+ 
+ 	$('#someBtn').click(function(){
+ 		$('#modalDialog').dialog('open');
+ 	});
+ 
+ });
+ 
+
+I tried various things to solve this issue, at the end, the solution turned out to be very simple.
+When the modal form is opened the beginDate input filed got the focus since it's the first element.
+Moving the focus to another element solved the problem.
