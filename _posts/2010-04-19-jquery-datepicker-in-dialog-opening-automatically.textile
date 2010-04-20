@@ -6,6 +6,7 @@ title: jQuery Datepicker in modal dialog
 At work, I had this issue with the jQuery datepicker inside a dialog box opening automatically.
 
 Html:
+bc.
 <div id="modalDialog">
  <input name="beginDate" class="date" type="text" value="">
  ....
@@ -14,14 +15,13 @@ Html:
  </div>
  
  JS:
- 
+ bc.
  $(document).ready(function(){
  	$('.date').datepicker();
  
  	$('#someBtn').click(function(){
  		$('#modalDialog').dialog('open');
  	});
- 
  });
  
 
