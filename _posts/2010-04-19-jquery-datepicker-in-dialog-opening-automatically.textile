@@ -16,6 +16,7 @@ bc.
  
  JS:
  bc.
+ {% highlight javascript %}
  $(document).ready(function(){
  	$('.date').datepicker();
  
@@ -24,6 +25,13 @@ bc.
  	});
  });
  
+ {% endhighlight %}
+ 
+ {% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
 I tried various things to solve this issue, at the end, the solution turned out to be very simple.
 When the modal form is opened the beginDate input filed got the focus since it's the first element.
