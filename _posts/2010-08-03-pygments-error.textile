@@ -6,11 +6,11 @@ Title: liquid error
 This is a stupid mistake on my part not to install
 the pygments and tried to use the syntax highlighter
 
-{%highlight javascript%}
+{% highlight javascript %}
 	function newFn(){
 		var str = 'hello world';
 	
 	}
-{%endhighlight%}
+{% endhighlight %}
 
 
